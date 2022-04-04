@@ -1,0 +1,95 @@
+/* Sorted universal, classes, then ids alphabetically */
+/* This page is used to style item category pages */
+
+
+table ul{
+    font-size: 1em; 
+}
+
+table{
+    max-width: 100%;
+    min-width: 100%;
+    margin-top: 4%;
+}
+
+td{
+    background-color: white;
+    padding: 1.5%;
+    text-align: center;
+    
+}
+
+th{
+    background-color: #FCE9D3;
+}
+
+table, td, th {
+    border: 1px solid #762700;
+    border-collapse: collapse;
+  }
+
+/* -h following name indicates that its a header */
+.button-h{
+    width:10%;
+}
+
+.description{
+    text-align: left;
+}
+
+.category-h{
+    width:16%;
+}
+
+.description-h{
+    width:35%;
+}
+
+.price-h{
+    width:16%;
+}
+
+/* button */
+.quick-add{
+    background-color: #E55E1C;
+    width : 70px;
+    height : 70px;
+}
+
+.tea img{
+    max-width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tea p{
+    margin: 2%;
+    text-align: center;
+}
+.tea-h{
+    width:20%;
+}
+
+#view-more{
+    margin-top: 5%;
+    margin-bottom: 5%;
+
+}
+
+#view-more button{
+    background-color: #77A193;
+    text-align: center;
+    max-width: 40%;
+    display: block;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+
+
+
+
+

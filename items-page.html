@@ -1,0 +1,193 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Little Tea Box</title>
+  <meta name="description" content="A tea subscription service to warm your heart">
+  <meta name="author" content="Emily Ngo">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="img/icons/favicon.png">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/category-style.css">
+
+  <!-- JS -->
+  <script src="js/changeText.js" defer></script>
+  <script src="js/showCart.js" defer></script>
+
+</head>
+
+<body  onload="loadCart()">
+    <header>
+        <nav>
+            <div class = "nav-centered"> 
+                <a id = "home" href="index.html">Little Tea Box</a>
+            </div>
+            <div class = "nav-left">
+                <a href="" class = "spacer">Teas</a>
+                <a href="">Discover</a>
+            </div>
+            <div class = "nav-right">
+                <a href="" class = "spacer">Profile</a>
+                <a href="cart.html" id = "cart-link">
+                    <img id = "cart-icon" src = "img/icons/cart.png">
+                    <span id = "cart-amount" >(0)</span>
+                </a>
+            
+            </div>
+        </nav>
+    </header>
+
+    <div class = "content">
+        <h3>Categories</h3>
+
+        <div class = "refine">
+            <div class = "tea-types">
+                <label for="type">
+                    <select name="type" id="type">
+                        <option value="green">Green Tea</option>
+                        <option value="herbal">Herbal Tea</option>
+                        <option value="black">Black Tea</option>
+                        <option value="white">White Tea</option>
+                    </select>
+                </label>
+
+                <label for="search">  
+                    <input id = "search" type="text" placeholder="Enter Keyword">
+                </label>
+                <br class = "clear">
+            </div>
+
+            <div class = "table">
+                <table>
+                    <tr class = "table-header">
+                      <th class ="tea-h">Tea</th>
+                      <th class ="category-h">Category</th>
+                      <th class ="price-h">Price</th>
+                      <th class ="description-h">Description</th>
+                      <th class ="button-h">Quick Add</th>
+                    </tr>
+
+                    <tr class = "category-row">
+                        <td class = "tea">
+                            <!-- CLICKABLE LINK HERE - takes user to lavendar tea details page -->
+                            <a href="detail-lavendar.html">
+                                <img src="img/herbal/lavender_tea.jpeg" alt="Lavendar tea leaves">
+                                <p>Lavendar Tea</p>
+                            </a>
+                        </td>
+                        <td class = "category">Herbal</td>
+                        <td class = "price">$9.00</td>
+                        <td class = "description">
+                            <ul>
+                                <li>Promotes rest and relaxation</li>
+                                <li>Pleasant and relaxing aroma</li>
+                                <li>Perfect for stress relief</li>
+                                <li>Ideal beverage for bedtime</li>
+                            </ul>
+                        </td>
+                        <td class = "button"><button class = "quick-add">+</button></td>
+                    </tr>
+
+                    <tr class = "category-row">
+                        <td class = "tea">
+                            <a href="">
+                                <img src="img/herbal/green_kuding_tea.jpeg" alt="Lavendar tea leaves">
+                                <p>Needle Kuding</p>
+                            </a>
+                        </td>
+                        <td class = "category">Herbal</td>
+                        <td class = "price">$9.00</td>
+                        <td class = "description">
+                            <ul>
+                                <li>Promotes health and breathing</li>
+                                <li>Strong bitter and refreshing taste</li>
+                                <li>Dispereses wind-heat, clears toxins, improves digestion, and reductes inflmmation</li>
+                                <li>Ideal beverage for focus, memory, and health</li>
+                            </ul>
+                        </td>
+                        <td class = "button"><button class = "quick-add">+</button></td>
+                    </tr>
+
+                    <tr class = "category-row">
+                        <td class = "tea">
+                            <a href="">
+                                <img src="img/herbal/rose_flower_tea.jpeg" alt="Lavendar tea leaves">
+                                <p>Rose Flower Tea</p>
+                            </a>
+                        </td>
+                        <td class = "category">Herbal</td>
+                        <td class = "price">$10.40</td>
+                        <td class = "description">
+                            <ul>
+                                <li>Naturally sweet with slight sour berry undertone </li>
+                                <li>Clear and sweet aroma</li>
+                                <li>Rich in anti-oxidants and best served with fruit</li>
+                                
+                            </ul>
+                        </td>
+                        <td class = "button"><button class = "quick-add">+</button></td>
+                    </tr>
+
+                    <tr class = "category-row">
+                        <td class = "tea">
+                            <a href="">
+                                <img src="img/herbal/jujube_tea.jpeg" alt="Lavendar tea leaves">
+                                <p>Wild Jujube Tea</p>
+                            </a>
+                        </td>
+                        <td class = "category">Herbal</td>
+                        <td class = "price">$11.91</td>
+                        <td class = "description">
+                            <ul>
+                                <li>China's most popular herbal tea</li>
+                                <li>Made of wild jujube fresh from Ning Xia</li>
+                                <li>Tangy, fruity, and sweet taste</li>
+                                <li>Rich with antioxidants perfect for health and breathing</li>
+                            </ul>
+                        </td>
+                        <td class = "button"><button class = "quick-add">+</button></td>
+                    </tr>
+
+                    <tr class = "category-row">
+                        <td class = "tea">
+                            <a href="">
+                                <img src="img/herbal/osmanthus_tea.jpeg" alt="Osmanthus tea leaves">
+                                <p>Osmanthus Tea</p>
+                            </a>
+                        </td>
+                        <td class = "category">Herbal</td>
+                        <td class = "price">$13.90</td>
+                        <td class = "description">
+                            <ul>
+                                <li>Smooth and sweet flavor with rich undertone</li>
+                                <li>Fragarant aroma</li>
+                                <li>Nutricious and delicious</li>
+                                <li>Ideal relxation in the evening or after a yoga session </li>
+                            </ul>
+                        </td>
+                        <td class = "button"><button class = "quick-add">+</button></td>
+                    </tr>
+
+                 
+                
+                  </table>
+
+            </div>
+            <div id = "view-more">
+                <button class = "view-more">Load More</button>
+                <br class = "clear">
+            </div>
+            
+        </div>
+    </div>
+
+    
+  
+
+</body>
+</html>

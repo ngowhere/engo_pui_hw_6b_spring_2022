@@ -1,0 +1,138 @@
+/* Sorted universal, classes, then ids alphabetically */
+/* Used to style the explore more side of the page */
+.explore-category{
+    width: 35%;
+    float:left;
+    text-align: center;
+}
+
+.explore-sample p{
+    margin-top: 0;
+}
+
+.explore-row img{
+    max-width: 100%;
+}
+
+.explore-row{
+    margin-bottom: 9%;
+    margin-top: 5%;
+}
+
+.explore-sample{
+    width: 61%;
+    float:right;
+}
+
+.explore-sample img{
+    max-width: 30%;
+    margin-right: 2%;
+}
+
+.explore{
+    font-size: 1.25em;
+    background-color: #77A193;
+    padding: 15px;
+}
+
+/* Used to style the upcoming orders side of the page */
+.upcoming-item{
+    /* background-color: aquamarine; */
+    text-align:left;
+    margin-bottom: 1em;
+}
+
+.upcoming-img{
+    max-width: 30%;
+    float: left;
+}
+
+.upcoming-img img{
+    max-width: 100%;
+}
+
+.upcoming-info{
+    max-width: 65%;
+    min-width: 65%;
+    float: right;
+    padding: 0;
+    margin: 0;
+    line-height: 1.15em;
+
+}
+
+.upcoming-info h4{
+    font-weight: bold;
+    color: #E55E1C;
+    font-size: 1.25em;
+    margin: 0;
+    margin-bottom: 0.5em;
+}
+
+.upcoming-info h5{
+    color: #C68C6F;
+    font-size: 1em;
+    font-weight: 100;
+    margin: 0;
+    margin-bottom: 0.5em;
+}
+
+.upcoming-info p{
+    color: #762700;
+    font-size: 1em;
+    font-weight: 100;
+    margin: 0;
+}
+
+.view-more{
+    background-color: #E55E1C;
+    font-weight: 300;
+}
+
+/* Refers to the specific div named explore*/
+#explore{
+    float: right;
+    /* background-color: skyblue; */
+    width: 60%;
+   
+}
+
+#explore h3{
+    text-decoration: underline;
+}
+
+/* Refers to the specific div named upcoming*/
+#upcoming{
+    background-color: #FFE48E;
+    float: left;
+    width: 25%;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align:center;
+    padding-bottom: 5%;
+
+}
+
+#welcome{
+    font-family: 'Alata', sans-serif;
+    font-size: 2.5em;
+    color: #E55E1C;
+    text-align:center;
+}
+
+/* // small screens */
+@media only screen and (max-width: 1024px) {    
+    #upcoming{
+
+        min-width: 90%;
+        margin-bottom: 4%;
+        padding-left: 4%;
+        padding-right: 4%;
+
+    }
+    #explore{
+        min-width: 100%;
+
+    }
+}
+

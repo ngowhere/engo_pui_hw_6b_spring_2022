@@ -1,0 +1,141 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Little Tea Box</title>
+  <meta name="description" content="A tea subscription service to warm your heart">
+  <meta name="author" content="Emily Ngo">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="img/icons/favicon.png">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/home-style.css">
+
+  <!-- JS -->
+  <script src="js/changeText.js" defer></script>
+  <script src="js/showCart.js" defer></script>
+
+</head>
+
+<body  onload="loadCart()" >
+    <header>
+        <nav>
+            <div class = "nav-centered"> 
+                <a id = "home" href="index.html">Little Tea Box</a>
+            </div>
+            <div class = "nav-left">
+                <a href="" class = "spacer">Teas</a>
+                <a href="">Discover</a>
+            </div>
+            <div class = "nav-right">
+                <a href="" class = "spacer">Profile</a>
+                <a href="cart.html" id = "cart-link">
+                    <img id = "cart-icon" src = "img/icons/cart.png">
+                    <span id = "cart-amount" >(0)</span>
+                </a>
+            
+            </div>
+        </nav>
+    </header>
+
+    <div class = "content">
+        <h1 id = "welcome"> Welcome Back!</h1>
+
+        <!-- Left hand side - shows upcoming orders for that customer -->
+        <div id = "upcoming">
+            <h3>Upcoming Orders</h3>
+
+            <div class = "upcoming-item">
+                <div class = "upcoming-img">
+                    <img src="img/white/white_peony.jpeg" alt="white peony tea petals">
+                </div>
+                <div class = "upcoming-info">
+                    <h4 class = "tea-name">White Peony</h4>
+                    <h5 class = "bag-type">Tea Bag Set</h5>
+                    <p class = "arrival-date">Arriving: 2/12/2022</p>
+                </div>
+                <br class = "clear">
+            </div>
+
+            <div class = "upcoming-item">
+                <div class = "upcoming-img">
+                    <img src="img/green/bi_luo_chun_green_tea_export_small_2.jpeg" alt="Bi Luo Chun Tea Leaves">
+                </div>
+                <div class = "upcoming-info">
+                    <h4 class = "tea-name">Bi Luo Chun</h4>
+                    <h5 class = "bag-type">1 Satchet Set</h5>
+                    <p class = "arrival-date">Arriving: 2/27/2022</p>
+                </div>
+                <br class = "clear">
+            </div>
+
+            <div class = "upcoming-item">
+                <div class = "upcoming-img">
+                    <img src="img/herbal/osmanthus_tea.jpeg" alt="osmanthus tea petals">
+                </div>
+                <div class = "upcoming-info">
+                    <h4 class = "tea-name">Osmanthus Oolong</h4>
+                    <h5 class = "bag-type">Loose Leaf Set</h5>
+                    <p class = "arrival-date">Arriving: 2/20/2022</p>
+                </div>
+                <br class = "clear">
+            </div>
+
+            <button class = "view-more">View All</button>
+            <p><a href="">Manage Subscriptions</a></p>
+        </div>
+
+         <!-- Right hand side - shows categories the user can explore -->
+        <div id = "explore"> 
+            <!-- has arrow in header -->
+            <h3>Explore More Teas &#x2192;</h3>
+            <div class = "explore-row">
+                <div class = "explore-category">
+                    <a href=""><img src="img/herbal/green_kuding_tea.jpeg" alt="Green Kuding tea leaves"></a>  
+                </div>
+
+                <div class = "explore-sample">
+                     <!-- CLICKABLE LINK HERE - takes user to herbal teas category page -->
+                    <p  class = "clickable"><a href="items-page.html">Herbal Tea</a></p>
+                    <a href=""><img src="img/herbal/rose_flower_tea.jpeg" alt="Rose Flower tea leaves"></a>
+                    <a href=""><img src="img/herbal/osmanthus_tea.jpeg" alt="osmanthus tea leaves"></a>
+                    <!-- CLICKABLE LINK HERE - takes user to lavendar tea details page -->
+                    <a href="detail-lavendar.html"><img src="img/herbal/lavender_tea.jpeg" alt="lavendar tea leaves"></a>
+                    
+                    <button  onclick="window.location.href='items-page.html'" class = "view-more clickableButton">View More</button>
+                </div>
+            </div>
+            <br class = "clear">
+
+            <div class = "explore-row">
+                <div class = "explore-category">
+                    <a href=""><img src="img/green/dragon_well_tea.jpeg" alt="dragon_well_tea tea leaves"></a>
+                </div>
+
+                <div class = "explore-sample">
+                    <p><a href="">Green Tea</a></p>
+                    <a href=""><img src="img/green/gunpowder_tea.jpeg" alt="dragon_well_tea tea leaves"></a>
+                    <a href=""><img src="img/green/jasmine_dragon_pearl_tea.jpeg" alt="dragon_well_tea tea leaves"></a>
+                    <a href=""><img src="img/green/longjing_tea.jpeg" alt="dragon_well_tea tea leaves"></a>
+                    <button class = "view-more">View More</button>
+                </div>
+                <br class = "clear">
+            </div>
+         
+            <button class = "explore">Explore More Categories</button>
+
+        </div>
+        <br class = "clear">
+        <br>
+
+    </div>
+
+    
+  
+
+</body>
+</html>

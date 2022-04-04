@@ -1,0 +1,190 @@
+/* Each tag sorted in alphabetical order */
+/* This page is for universal elements and styling */
+
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Lato&family=Lobster&family=Mulish:wght@300;400;600&display=swap');
+
+a{
+   color:  #E55E1C;
+   text-decoration: underline;
+}
+
+body{
+    background-color: #FFF2CF;
+    font-family: 'Lato', sans-serif;
+    font: 24px;
+    color: #762700;
+    margin: 0;
+}
+
+/* Default button is gray and fills up entire div */
+button{
+    font-family: 'Mulish', sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    background-color: gray;
+    color: #fff;
+    border-radius: 90px;
+    border: none;
+    padding: 10px;
+    margin-top: 0.5em;
+    text-align: center;
+    width: 100%;
+}
+
+header{
+    background-color: #FFE48E;
+}
+
+
+/* Headers use Alata */
+h3{
+    font-family: 'Alata', sans-serif;
+    font-size: 2em;
+    color: #77A193;
+}
+
+h4{
+    font-family: 'Alata', sans-serif;
+    font-size: 1em;
+}
+
+h5{
+    font-family: 'Alata', sans-serif;
+    font-size: 1.25em;
+}
+
+nav{
+    border-width:1px 0;
+    list-style:none;
+    margin:0;
+    padding:0;
+    text-align:center;
+}
+
+nav a{
+   font-family: 'Mulish', sans-serif;
+   font-size: 30px;
+   color: #E55E1C;
+   font-weight: 100;
+}
+
+nav li{
+    display: inline-block;
+}
+
+nav{
+    display: inline-block; 
+    min-width: 100%;
+    vertical-align: middle;
+}
+
+/* Make parts of the nav bar move to the right parts */
+nav ul{
+    margin: 3%;
+    min-width: 80%;
+    /* background-color: plum; */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ul{
+    font-size: 1.25em;
+}
+.clear{
+    clear: both;
+}
+
+.clickableButton:hover{
+    background-color: #762700;
+}
+
+.clickable:hover a{
+    color: #762700;
+    background-color: #FFF2CF;
+}
+
+.content{
+    padding: 5%;
+}
+
+.nav-right{
+    display: inline-block;
+    vertical-align: middle;
+    min-width: 30%;
+    /* background-color: aqua; */
+    float: right;
+    padding: 2%;
+}
+
+.nav-left{
+    display: inline-block;
+    vertical-align: middle;
+    min-width: 30%;
+    /* background-color: aquamarine; */
+    float: left;
+    padding: 2%;
+}
+
+.nav-centered{
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 20%;
+    /* background-color: pink; */
+    padding: 2%;
+}
+
+.spacer{
+    padding-right: 10%;
+}
+
+#cart-icon{
+    max-height: 1em;  
+    text-decoration: none;
+}
+
+#cart-link{
+    text-decoration: none;
+}
+
+#cart-amount{
+    font-size: 0.7em;
+    text-decoration: none;
+    color: #762700;
+}
+
+#home{
+    font-family: 'Lobster';
+    text-decoration: none;
+    font-size: 2em;
+}
+
+@media only screen and (max-width: 1024px) {    
+    #home{
+        text-decoration: none;
+        font-size: 2.5em;
+        min-width: 100%;
+    }
+    .product-img{
+        min-width: 100%;
+        /* background-color: aquamarine; */
+    }
+    nav a{
+        font-family: 'Mulish', sans-serif;
+        font-size: 1em;
+        color: #E55E1C;
+        font-weight: 100;
+        min-width: 100%;
+    }
+
+    .nav-right{
+        min-width: 100%;
+    }
+    
+    .nav-left{
+        min-width: 100%;
+    }
+    
+    .nav-centered{
+        min-width: 100%;
+    }
+}

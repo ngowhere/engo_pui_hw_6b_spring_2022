@@ -1,0 +1,145 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Little Tea Box</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A tea subscription service to warm your heart">
+  <meta name="author" content="Emily Ngo">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="img/icons/favicon.png">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/detail-style.css">
+
+  <!-- JS -->
+  <script src="js/changeText.js" defer></script>
+  <script src="js/showCart.js" defer></script>
+
+</head>
+
+<body  onload="loadCart()">
+    <header>
+        <nav>
+            <div class = "nav-centered"> 
+                <a id = "home" href="index.html">Little Tea Box</a>
+            </div>
+            <div class = "nav-left">
+                <a href="" class = "spacer">Teas</a>
+                <a href="">Discover</a>
+            </div>
+            <div class = "nav-right">
+                <a href="" class = "spacer">Profile</a>
+                <a href="cart.html" id = "cart-link">
+                    <img id = "cart-icon" src = "img/icons/cart.png">
+                    <span id = "cart-amount" >(0)</span>
+                </a>
+            
+            </div>
+        </nav>
+    </header>
+
+    <div class = "content">
+        <!-- image appears on left hand side -->
+        <div class = "product-img">
+            <img id = "product-img" src="img/herbal/lavender_tea.jpeg" alt="lavendar tea leaves">
+        </div>
+        <!-- information about product -->
+        <div class = "details">
+            <h3 id = "name">Lavendar Tea</h3>
+            <h4 class = "price" id = "price">$9.00</h4>
+            <!-- Start Rating for tea -->
+            <p class = "rating"> &#9733;&#9733;&#9733;&#9733;&#9733; </p>
+            <ul>
+                <li>Promotes rest and relaxation</li>
+                <li>Pleasant and relaxing aroma</li>
+                <li>Perfect for stress relief</li>
+                <li>Ideal beverage for bedtime</li>
+            </ul>
+
+            
+            <div class = "option-buttons">
+                <p class = "info">Options</p>
+                <p id = "option-description">Select Tea Leaf Style</p>
+                <button id = "loose" onclick = "looseText()">Loose Leaf</button>
+                <button id = "satchet" onclick = "satchetText()">Satchets</button>
+                <button id = "bag" onclick = "bagText()">Tea Bags</button>
+             
+            </div>
+
+            
+
+            <div class = "checkout">
+                <div class = "subscription-detials">
+                    <!-- drop down list -->
+                    <label for="subscription">Deliver Every:
+                        <select name="subscription" id="subscription">
+                            <option value="week1">1 week</option>
+                            <option value="week2">2 weeks</option>
+                            <option value="month1">1 month</option>
+                            <option value="month2">2 months</option>
+                            <option value="1time">1 Time Purchase</option>
+                        </select>
+                    </label>
+                    <!-- number spinner -->
+                    <label for="quantity">  
+                        Quantity:
+                        <input type="number" name="quantity" id="quantity" min="1" max="10" step="1" value="1">
+                    </label>
+                    <br class = "clear">
+                </div>
+                
+                <button class = "add-cart" onclick = "addCart()">
+                    Add
+                </button>
+
+                <br class = "clear">
+            </div>
+
+            <div class = "spacer"></div>
+
+            <div class = "nutrition">
+                <h3>Nutrition</h3>
+                <p>
+                    Caffeine free, 2.4 calories per 240 g serving. This serving contains 0 g of fat, 0.5 g of protein and 0 g of carbohydrate. The latter is 0 g sugar and 0 g of dietary fiber, the rest is complex carbohydrate. 
+                </p>
+            </div>
+
+            <div class = "review">
+                <h3>Reviews</h3>
+                <div class = "review-item">
+                    <h5 class ="reviewer-name">Jenna Summers</h5>
+                    <p class = "date">07/05/2021</p>
+
+                    <!-- star rating -->
+                    <p> &#9733;&#9733;&#9733;&#9733;&#9733; </p>
+                    <h4 class = "title">Refreshing</h4>
+                    <p class = "review-body"> Don't even need a fully heaped teaspoon for strong taste, a level one will do, even for a large mug. Every flower is fresh and bright. </p>
+                </div>
+                <br>
+                <div class = "review-item">
+                    <h5 class ="reviewer-name">Nora Winters</h5>
+                    <p class = "date">12/23/2020</p>
+
+                    <!-- star rating -->
+                    <p> &#9733;&#9733;&#9733;&#9733;&#9734; </p>
+                    <h4 class = "title">Incredible</h4>
+                    <p class = "review-body"> Easily the freshest lavender tea on the market. Wonderful fragrance, delicate. </p>
+                </div>
+            </div>
+            <br>
+            <br class = "clear">
+
+
+        </div>
+    </div>
+
+    
+  
+
+</body>
+</html>

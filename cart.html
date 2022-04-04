@@ -1,0 +1,126 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Little Tea Box</title>
+  <meta name="description" content="A tea subscription service to warm your heart">
+  <meta name="author" content="Emily Ngo">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="img/icons/favicon.png">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/cart-style.css">
+
+  <!-- JS -->
+  <script src="js/changeText.js" defer></script>
+  <script src="js/showCart.js" defer></script>
+
+</head>
+
+<body  onload="loadCart()">
+    <header>
+        <nav>
+            <div class = "nav-centered"> 
+                <a id = "home" href="index.html">Little Tea Box</a>
+            </div>
+            <div class = "nav-left">
+                <a href="" class = "spacer">Teas</a>
+                <a href="">Discover</a>
+            </div>
+            <div class = "nav-right">
+                <a href="" class = "spacer">Profile</a>
+                <a href="cart.html" id = "cart-link">
+                    <img id = "cart-icon" src = "img/icons/cart.png">
+                    <span id = "cart-amount" >(0)</span>
+                </a>
+            
+            </div>
+        </nav>
+    </header>
+
+    <div class = "content">
+        <h3>Cart</h3>
+
+        <div id = "cart">
+            <div class = "cart-item">
+                <div class = "product-img">
+                    <img src="img/herbal/lavender_tea.jpeg" alt="Lavendar tea leaves">
+                </div>
+
+                <div class = "product-details">
+                    <h4 class = "product-title">Lavendar Tea</h4>
+                    <div class = "subscription-detials">
+                        <!-- drop down list -->
+                        <label for="type">
+                            Tea Type:
+                            <select name="type" id="type">
+                                <option value="looseleaf">Loose Leaf</option>
+                                <option value="satchet">Satchet</option>
+                                <option value="teabag">Tea Bag</option>
+                            </select>
+                        </label>
+                        <br>
+
+                        <!-- drop down list -->
+                        <label for="subscription">
+                            Deliver Every:
+                            <select name="subscription" id="subscription">
+                                <option value="week1">1 week</option>
+                                <option value="week2">2 weeks</option>
+                                <option value="month1">1 month</option>
+                                <option value="month2">2 months</option>
+                            </select>
+                        </label>
+                        <br>
+                        
+                        
+                        <!-- number spinner -->
+                        <span class = "quantity">
+                            <label for="quantity">  
+                                Quantity:
+                                <input type="number" name="quantity" id="quantity" min="0" max="10" step="1" value="1">
+                            </label>
+                        </span>
+                        
+                        <br class = "clear">
+                    </div>
+                </div>
+
+                <div class = "product-price">
+                    <p>$10.95</p>
+                </div>
+            </div>
+
+
+        </div>
+        <br>
+        <hr>
+
+        <div id = "cost">
+            <p id = "Subtotal">
+                Price: <span>$X.XX</span>
+            </p>
+            <p id = "Shipping">
+                Shipping: <span class = "pending"> Pending</span>
+            </p>
+            <p id = "Tax">
+                Tax:  <span class = "pending"> Pending</span>
+            </p>
+            <p id = "total">
+                Total: <span class = "pending"> Pending</span>
+            </p>
+            <br>
+            
+            <button id = "pay">Go To Payment</button>
+        </div>
+    </div>
+
+    
+  
+
+</body>
+</html>
